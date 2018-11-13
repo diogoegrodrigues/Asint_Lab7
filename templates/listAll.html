@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List all books</title>
+</head>
+<body>
+
+The book Database has now {{count_b}} books.
+
+
+{% for item in allbooks %}
+    <ul>
+        <li>Book nr:
+            <ul>
+                    <li><a>autor={{item.author}}</a> </li>
+                    <li><a>titulo={{item.title}}</a></li>
+                    <li><a>ano={{item.year}}</a> </li>
+            </ul>
+        </li>
+    </ul>
+{% endfor %}
+
+
+
+</body>
+</html>

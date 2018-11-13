@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List all books of certain author</title>
+</head>
+<body>
+
+This author has {{counter_a}} books.
+
+
+{% for item in listAuthor %}
+    <ul>
+        <li>Book nr:
+            <ul>
+                    <li><a>autor={{item.author}}</a> </li>
+                    <li><a>titulo={{item.title}}</a></li>
+                    <li><a>ano={{item.year}}</a> </li>
+            </ul>
+        </li>
+    </ul>
+{% endfor %}
+
+
+
+</body>
+</html>
